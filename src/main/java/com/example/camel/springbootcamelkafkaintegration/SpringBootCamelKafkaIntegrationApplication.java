@@ -1,6 +1,6 @@
-package com.moneygram.demo.springbootcamelkafkaintegration;
+package com.example.camel.springbootcamelkafkaintegration;
 
-import com.moneygram.demo.springbootcamelkafkaintegration.route.SimpleRouteBuilder;
+import com.example.camel.springbootcamelkafkaintegration.route.SimpleRouteBuilder;
 import org.apache.camel.CamelContext;
 import org.apache.camel.impl.DefaultCamelContext;
 import org.springframework.boot.SpringApplication;

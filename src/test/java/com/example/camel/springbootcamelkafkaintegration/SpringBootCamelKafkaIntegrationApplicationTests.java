@@ -1,4 +1,4 @@
-package com.moneygram.demo.springbootcamelkafkaintegration;
+package com.example.camel.springbootcamelkafkaintegration;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

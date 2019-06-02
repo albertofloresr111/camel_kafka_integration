@@ -1,6 +1,6 @@
-package com.moneygram.demo.springbootcamelkafkaintegration.route;
+package com.example.camel.springbootcamelkafkaintegration.route;
 
-import com.moneygram.demo.springbootcamelkafkaintegration.processor.MyTransformer;
+import com.example.camel.springbootcamelkafkaintegration.processor.MyTransformer;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.moneygram.demo.springbootcamelkafkaintegration.processor;
+package com.example.camel.springbootcamelkafkaintegration.processor;
 
 import org.springframework.stereotype.Component;
 
