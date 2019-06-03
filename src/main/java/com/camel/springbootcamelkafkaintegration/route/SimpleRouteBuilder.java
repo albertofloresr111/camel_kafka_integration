@@ -12,22 +12,22 @@ import org.apache.camel.builder.RouteBuilder;
  */
 public class SimpleRouteBuilder extends RouteBuilder {
 
-    private static final String KAFKA_SERVER    = "kafka://localhost:9092?";
-    private static final String TOPIC_NAME      = "topic=testing";
-    private static final String BROKER_NAME     = "&brokers=localhost:9092";
+    private static final String KAFKA_HOST_SERVER   = "kafka://localhost:9092?";
+    private static final String KAFKA_TOPIC_NAME    = "topic=testing";
+    private static final String KAFKA_BROKER_NAME   = "&brokers=localhost:9092";
 
-    private static final String SOURCE          = "file:/home/aguilas/IdeaProjects/spring-boot-camel-kafka-integration/src/main/resources/inbox?noop=true";
+    private static final String SOURCE = "file:/home/aguilas/IdeaProjects/spring-boot-camel-kafka-integration/src/main/resources/inbox?noop=true";
 
     @Override
     public void configure() throws Exception {
 
-        String destinationKafkaURL = KAFKA_SERVER + TOPIC_NAME + BROKER_NAME;
+        String destination = KAFKA_HOST_SERVER + KAFKA_TOPIC_NAME + KAFKA_BROKER_NAME;
 
         from(SOURCE)
                 .split()
                 .tokenize("\n")
                 .bean( new MyTransformer(), "transformContent")
-                .to(destinationKafkaURL);
+                .to(destination);
 
     }
 }
