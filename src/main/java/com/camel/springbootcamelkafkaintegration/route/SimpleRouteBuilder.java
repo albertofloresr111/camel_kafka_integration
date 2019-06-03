@@ -1,6 +1,6 @@
-package com.example.camel.springbootcamelkafkaintegration.route;
+package com.camel.springbootcamelkafkaintegration.route;
 
-import com.example.camel.springbootcamelkafkaintegration.processor.MyTransformer;
+import com.camel.springbootcamelkafkaintegration.processor.MyTransformer;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
 

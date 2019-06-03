@@ -1,6 +1,6 @@
-package com.example.camel.springbootcamelkafkaintegration;
+package com.camel.springbootcamelkafkaintegration;
 
-import com.example.camel.springbootcamelkafkaintegration.route.SimpleRouteBuilder;
+import com.camel.springbootcamelkafkaintegration.route.SimpleRouteBuilder;
 import org.apache.camel.CamelContext;
 import org.apache.camel.impl.DefaultCamelContext;
 import org.springframework.boot.SpringApplication;

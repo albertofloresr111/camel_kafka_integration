@@ -1,4 +1,4 @@
-package com.example.camel.springbootcamelkafkaintegration.processor;
+package com.camel.springbootcamelkafkaintegration.processor;
 
 import org.springframework.stereotype.Component;
 

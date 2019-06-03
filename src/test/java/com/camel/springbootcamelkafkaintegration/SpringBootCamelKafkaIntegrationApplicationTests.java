@@ -1,4 +1,4 @@
-package com.example.camel.springbootcamelkafkaintegration;
+package com.camel.springbootcamelkafkaintegration;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
