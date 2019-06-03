@@ -23,7 +23,7 @@ public class SimpleRouteBuilder extends RouteBuilder {
 
         String destination = KAFKA_HOST_SERVER + KAFKA_TOPIC_NAME + KAFKA_BROKER_NAME;
 
-        from(SOURCE)
+        from( SOURCE )
                 .split()
                 .tokenize("\n")
                 .bean( new MyTransformer(), "transformContent")
